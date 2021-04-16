@@ -32,18 +32,22 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.nombrePokemon = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelPeso = new System.Windows.Forms.Label();
+            this.labelAltura = new System.Windows.Forms.Label();
+            this.labelTipo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(289, 155);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(155, 115);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -72,35 +76,17 @@
             // 
             // nombrePokemon
             // 
-            this.nombrePokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombrePokemon.Location = new System.Drawing.Point(334, 21);
+            this.nombrePokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombrePokemon.Location = new System.Drawing.Point(301, 417);
             this.nombrePokemon.Name = "nombrePokemon";
-            this.nombrePokemon.Size = new System.Drawing.Size(212, 31);
+            this.nombrePokemon.Size = new System.Drawing.Size(131, 18);
             this.nombrePokemon.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(296, 418);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Nombre";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(296, 440);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Peso";
+            this.nombrePokemon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(296, 459);
+            this.label3.Location = new System.Drawing.Point(295, 481);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 6;
@@ -109,11 +95,47 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(296, 485);
+            this.label4.Location = new System.Drawing.Point(296, 504);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Tipo";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(295, 460);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Peso";
+            // 
+            // labelPeso
+            // 
+            this.labelPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPeso.Location = new System.Drawing.Point(332, 456);
+            this.labelPeso.Name = "labelPeso";
+            this.labelPeso.Size = new System.Drawing.Size(100, 18);
+            this.labelPeso.TabIndex = 8;
+            this.labelPeso.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelAltura
+            // 
+            this.labelAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAltura.Location = new System.Drawing.Point(335, 478);
+            this.labelAltura.Name = "labelAltura";
+            this.labelAltura.Size = new System.Drawing.Size(97, 18);
+            this.labelAltura.TabIndex = 9;
+            this.labelAltura.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelTipo
+            // 
+            this.labelTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipo.Location = new System.Drawing.Point(330, 501);
+            this.labelTipo.Name = "labelTipo";
+            this.labelTipo.Size = new System.Drawing.Size(102, 18);
+            this.labelTipo.TabIndex = 10;
+            this.labelTipo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PokedexBasica
             // 
@@ -122,10 +144,12 @@
             this.BackgroundImage = global::PruebaBBDD.Properties.Resources.pokedex;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(733, 678);
+            this.Controls.Add(this.labelTipo);
+            this.Controls.Add(this.labelAltura);
+            this.Controls.Add(this.labelPeso);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.nombrePokemon);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -145,9 +169,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label nombrePokemon;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelPeso;
+        private System.Windows.Forms.Label labelAltura;
+        private System.Windows.Forms.Label labelTipo;
     }
 }

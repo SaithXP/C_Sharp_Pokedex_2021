@@ -45,6 +45,9 @@ namespace PruebaBBDD
         private void asignaPokemon() {
             DataTable pokemonElegido = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = pokemonElegido.Rows[0]["nombre"].ToString();
+            labelPeso.Text = pokemonElegido.Rows[0]["peso"].ToString();
+            labelAltura.Text = pokemonElegido.Rows[0]["altura"].ToString();
+            labelTipo.Text = pokemonElegido.Rows[0]["tipo1"].ToString();
             pictureBox1.Image = convierteBlobAImagen((byte[])pokemonElegido.Rows[0]["imagen"]);
         }
 
