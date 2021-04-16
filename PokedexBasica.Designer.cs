@@ -38,7 +38,13 @@
             this.labelPeso = new System.Windows.Forms.Label();
             this.labelAltura = new System.Windows.Forms.Label();
             this.labelTipo = new System.Windows.Forms.Label();
+            this.labelTipo2 = new System.Windows.Forms.Label();
+            this.pictureBoxEvolucion1 = new System.Windows.Forms.PictureBox();
+            this.imagenEvolucion1 = new System.Windows.Forms.PictureBox();
+            this.nombreEvolucion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEvolucion1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenEvolucion1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -130,20 +136,62 @@
             // 
             // labelTipo
             // 
-            this.labelTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTipo.Location = new System.Drawing.Point(330, 501);
             this.labelTipo.Name = "labelTipo";
-            this.labelTipo.Size = new System.Drawing.Size(102, 18);
+            this.labelTipo.Size = new System.Drawing.Size(51, 18);
             this.labelTipo.TabIndex = 10;
             this.labelTipo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelTipo2
+            // 
+            this.labelTipo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipo2.Location = new System.Drawing.Point(381, 501);
+            this.labelTipo2.Name = "labelTipo2";
+            this.labelTipo2.Size = new System.Drawing.Size(51, 18);
+            this.labelTipo2.TabIndex = 11;
+            this.labelTipo2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBoxEvolucion1
+            // 
+            this.pictureBoxEvolucion1.Image = global::PruebaBBDD.Properties.Resources._188940;
+            this.pictureBoxEvolucion1.Location = new System.Drawing.Point(517, 21);
+            this.pictureBoxEvolucion1.Name = "pictureBoxEvolucion1";
+            this.pictureBoxEvolucion1.Size = new System.Drawing.Size(82, 78);
+            this.pictureBoxEvolucion1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEvolucion1.TabIndex = 12;
+            this.pictureBoxEvolucion1.TabStop = false;
+            this.pictureBoxEvolucion1.Click += new System.EventHandler(this.pictureBoxEvolucion1_Click);
+            // 
+            // imagenEvolucion1
+            // 
+            this.imagenEvolucion1.Location = new System.Drawing.Point(582, 21);
+            this.imagenEvolucion1.Name = "imagenEvolucion1";
+            this.imagenEvolucion1.Size = new System.Drawing.Size(82, 78);
+            this.imagenEvolucion1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagenEvolucion1.TabIndex = 14;
+            this.imagenEvolucion1.TabStop = false;
+            // 
+            // nombreEvolucion
+            // 
+            this.nombreEvolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreEvolucion.Location = new System.Drawing.Point(517, 102);
+            this.nombreEvolucion.Name = "nombreEvolucion";
+            this.nombreEvolucion.Size = new System.Drawing.Size(147, 23);
+            this.nombreEvolucion.TabIndex = 15;
+            this.nombreEvolucion.Text = "label1";
+            this.nombreEvolucion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PokedexBasica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PruebaBBDD.Properties.Resources.pokedex;
+            this.BackgroundImage = global::PruebaBBDD.Properties.Resources.pokedex1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(733, 678);
+            this.Controls.Add(this.nombreEvolucion);
+            this.Controls.Add(this.imagenEvolucion1);
+            this.Controls.Add(this.labelTipo2);
             this.Controls.Add(this.labelTipo);
             this.Controls.Add(this.labelAltura);
             this.Controls.Add(this.labelPeso);
@@ -154,10 +202,13 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxEvolucion1);
             this.DoubleBuffered = true;
             this.Name = "PokedexBasica";
             this.Text = "PokedexBasica";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEvolucion1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenEvolucion1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,5 +226,9 @@
         private System.Windows.Forms.Label labelPeso;
         private System.Windows.Forms.Label labelAltura;
         private System.Windows.Forms.Label labelTipo;
+        private System.Windows.Forms.Label labelTipo2;
+        private System.Windows.Forms.PictureBox pictureBoxEvolucion1;
+        private System.Windows.Forms.PictureBox imagenEvolucion1;
+        private System.Windows.Forms.Label nombreEvolucion;
     }
 }

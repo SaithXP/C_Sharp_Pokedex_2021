@@ -23,5 +23,10 @@ namespace PruebaBBDD
             misPokemons = miConexion.getPokemons();
             dataGridView1.DataSource = misPokemons;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -45,10 +45,22 @@ namespace PruebaBBDD
         private void asignaPokemon() {
             DataTable pokemonElegido = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = pokemonElegido.Rows[0]["nombre"].ToString();
+            pictureBox1.Image = convierteBlobAImagen((byte[])pokemonElegido.Rows[0]["imagen"]);
+            if (pokemonElegido.Rows[0]["posEvolucion"] != DBNull.Value)
+            {
+                DataTable pokemonElegido2 = miConexion.getPokemonPorId(idActual + 1);
+                nombreEvolucion.Text = pokemonElegido2.Rows[0]["nombre"].ToString();
+                imagenEvolucion1.Image = convierteBlobAImagen((byte[])pokemonElegido2.Rows[0]["imagen"]);
+            }
+            if (pictureBox1 == imagenEvolucion1)
+            {
+                pictureBox1 = null;
+            }
             labelPeso.Text = pokemonElegido.Rows[0]["peso"].ToString();
             labelAltura.Text = pokemonElegido.Rows[0]["altura"].ToString();
             labelTipo.Text = pokemonElegido.Rows[0]["tipo1"].ToString();
-            pictureBox1.Image = convierteBlobAImagen((byte[])pokemonElegido.Rows[0]["imagen"]);
+            labelTipo2.Text = pokemonElegido.Rows[0]["tipo2"].ToString();
+            
         }
 
         private Image convierteBlobAImagen(byte[] img) {
@@ -61,6 +73,16 @@ namespace PruebaBBDD
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxEvolucion1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxEvolucion2_Click(object sender, EventArgs e)
         {
 
         }

@@ -63,9 +63,40 @@ namespace PruebaBBDD.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _188940 {
+            get {
+                object obj = ResourceManager.GetObject("188940", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pokedex {
             get {
                 object obj = ResourceManager.GetObject("pokedex", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pokedex_icon_sign_symbol_color_website_design_mobile_app_development_simple_element_pokemon_go_collection_isolated_160922377 {
+            get {
+                object obj = ResourceManager.GetObject("pokedex-icon-sign-symbol-color-website-design-mobile-app-development-simple-eleme" +
+                        "nt-pokemon-go-collection-isolated-160922377", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pokedex1 {
+            get {
+                object obj = ResourceManager.GetObject("pokedex1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

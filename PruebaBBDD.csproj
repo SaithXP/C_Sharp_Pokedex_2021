@@ -152,5 +152,14 @@
   <ItemGroup>
     <None Include="Resources\pokedex.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokedex-icon-sign-symbol-color-website-design-mobile-app-development-simple-element-pokemon-go-collection-isolated-160922377.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\188940.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokedex1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
