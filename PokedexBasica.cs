@@ -51,7 +51,7 @@ namespace PruebaBBDD
         private Image convierteBlobAImagen(byte[] img) {
             return (Image.FromStream(new System.IO.MemoryStream(img)));
         }
-
+        //haha lol
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
